@@ -1,0 +1,290 @@
+
+/* 全てのタグに共通するcssクラス */
+header{
+  height: 65px;
+  width: 100%;
+  background-color: rgba(48, 50, 67,1.0);
+}
+body{
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+a{
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+footer{
+  background-color: rgba(247, 228, 198, 0.5);
+  height:150px;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header要素を記述 */
+.container {
+  width: 100%;
+  max-width:1170px;
+  padding:0;
+  margin:0 auto;
+}
+.header-left{
+  float: left;
+}
+
+.header-right li{
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.header-right a{
+  line-height: 55px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+/*ハンバーガーボタン*/
+
+.el_humburger {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 26px;
+  height: auto;
+  padding-top: 1px;
+  box-sizing: border-box;
+  z-index: 10000;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  pointer-events: auto;
+  display: none;
+}
+
+.el_humburger > span {
+  display: block;
+  width: 100%;
+  margin: 0 auto 6px;
+  height: 3px;
+  background: white;
+  transition: all 0.2s ease-in-out;
+}
+.el_humburger > span:last-child {
+  margin-bottom: 0;
+}
+.js_humburgerOpen .el_humburger > span {
+  background: white;
+}
+
+.js_humburgerOpen .el_humburger > span.tops {
+  transform: translateY(9px) rotate(-45deg);
+}
+
+.js_humburgerOpen .el_humburger > span.middle {
+  opacity: 0;
+}
+
+.js_humburgerOpen .el_humburger > span.bottom {
+  transform: translateY(-9px) rotate(45deg);
+}
+
+.el_humburgerButton.el_humburgerButton__close {
+  top: 2%;
+  right: 2%;
+}
+
+.el_humburgerButton__close > span {
+  display: block;
+  width: 35px;
+  margin: 0 auto;
+  height: 4px;
+  background: #fff;
+}
+
+.el_humburgerButton__close > span.el_humburgerLineTop {
+  transform: translateY(5px) rotate(-45deg);
+}
+
+.el_humburgerButton__close > span.el_humburgerLineBottom {
+  transform: translateY(-6px) rotate(45deg);
+}
+
+/*ナビゲーション*/
+.uq_spNavi {
+  display: none;
+}
+.uq_spNavi.js_appear {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  z-index: 9999;
+}
+
+.uq_spNavi_screen {
+  position: absolute;
+  top: 0;
+  left: 50;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(105, 105, 105, 1.0);
+  z-index: 0;
+  margin-top: 0px;
+  padding-top: 0px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.navigation {
+  padding: 80px 0 0 0;
+  text-align: center;
+}
+
+.navigation_item {
+  font-ize: 18px;
+  margin-bottom: 20px;
+}
+
+.navigation_item > a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.js_fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* トップ部分のcss記述 */
+.top{
+  padding: 60px 0 60px 0;
+  background-color: rgba(247, 228, 198, 0.5);
+  color:white;
+  background-size: cover;
+  text-align: center;
+}
+.frame-border{
+  width: 90%;
+  margin: 0 auto;
+  border: double 5px grey;
+  background: white;
+  box-sizing: border-box;
+}
+.top h1{
+  opacity:0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  color: black;
+}
+.top p{
+  opacity: 0.7;
+  color: black;
+}
+
+/* googlemap記述 */
+.gmap {
+height: 0;
+overflow: hidden;
+padding-bottom: 56.25%;
+position: relative;
+}
+.gmap iframe {
+position: absolute;
+left: 50%;
+top: 20px;
+height: 100%;
+width: 90%;
+transform: translateX(-50%);
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+}
+
+/* contactのcss記述 */
+
+.access{
+  height:1050px;
+  padding-bottom: 80px;
+  background-color: rgba(247, 228, 198, 0.5);
+}
+
+.access-information{
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.access-information p{
+  padding-left: 25px;
+}
+
+.frame-border h1{
+  text-align: center;
+  color: black;
+}
+
+
+.company-table{
+  padding-top: 30px;
+}
+table{
+  width: 90%;
+  margin: 20px auto;
+  table-layout: fixed;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+tr td{
+  background-color: white;
+  color: black;
+  padding: 15px;
+  text-align: left;
+  font-size: 20px;
+}
+
+
+
+/* footerのcss */
+
+.flex-list-vertical{
+  flex-direction: column;
+}
+
+.flex-list-vertical p{
+  text-align: center;
+}
+
+@media(max-width:1100px) {
+  .header-right{
+    display: none;
+  }
+  .el_humburger{
+    display: block;
+  }
+  .flex-list{
+    flex-wrap: wrap;
+  }
+.flex-list li{
+  width: 100%;
+}
+
+.flex-list p{
+  text-align: center;
+}
+
+.access{
+  height: auto;
+}
+
+
+}

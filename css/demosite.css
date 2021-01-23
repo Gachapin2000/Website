@@ -1,0 +1,186 @@
+
+/* 全てのタグに共通するcssクラス */
+header{
+  height: 65px;
+  width: 100%;
+  background-color: rgba(48, 50, 67,1.0);
+}
+body{
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+  padding: 5px;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+footer{
+  background-color: rgba(247, 228, 198, 0.5);
+  height:270px;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header要素を記述 */
+.container {
+  width:1170px;
+  padding:0 15px;
+  margin:0 auto;
+}
+.header-left{
+  float: left;
+}
+
+.header-right li{
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.header-right a{
+  line-height: 55px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+
+/* トップ部分のcss記述 */
+.top{
+  padding: 180px 0 100px 0;
+  background-image: url("../image/sushi2.jpg");
+  color:white;
+  background-size: cover;
+  text-align: center;
+}
+.top h1{
+  opacity:0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  color: white;
+}
+.top p{
+  opacity: 0.7;
+  color: white;
+}
+/* snsボタンのcss記述 */
+.btn{
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px:
+  text-align:center;
+}
+
+.facebook{
+  background-color: blue;
+  margin-right: 10px;
+}
+.twitter{
+  background-color: lightblue;
+}
+.instagram{
+  background-color: pink;
+  margin-right: 10px;
+}
+
+.btn-navi{
+  margin: 20px 0;
+}
+
+.btn-navi p{
+  margin: 10px 0;
+}
+/* font読み込みの記述 */
+.fa{
+  margin-right: 5px;
+}
+
+/* main navi内のcss記述 */
+
+.main-navi{
+  height: 200px;
+  padding-bottom: 80px;
+  background-color: rgba(247, 228, 198, 0.5);
+}
+.heading{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2{
+  font-weight: normal;
+  border-bottom: : 2px solid;
+}
+
+.main{
+}
+.main-content{
+  float: left;
+  width:33%;
+}
+.navi{
+  padding-left: 60px;
+  border-radius: 20px;
+}
+
+/* topicsのcss記述 */
+
+.topics{
+  height:900px;
+  padding-bottom: 80px;
+  background-color: rgba(247, 228, 198, 0.5);
+}
+
+.topics-container{
+  width:95%;
+  padding:0 10px;
+  margin:0 auto;
+
+}
+
+.topics-box{
+  height:850px;
+  background-color: white;
+}
+
+.topics-left{
+  float: left;
+  width: 25%;
+}
+.topics-icon{
+  position: relative;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.txt-contents{
+  width: 80%;
+  display: inline-block;
+  margin-left: 15px;
+  color: black;
+}
+
+.frame-border{
+  border-bottom: 4px solid grey;
+}
+
+/* footerのcss */
+footer img{
+  margin-top: 100px;
+  margin-left: 70px;
+}
+footer p{
+  margin-right: 60px;
+  text-align: center;
+}
