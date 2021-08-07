@@ -1,0 +1,440 @@
+
+/* 全てのタグに共通するcssクラス */
+header{
+  height: 65px;
+  width: 100%;
+  background-color: rgba(48, 50, 67,1.0);
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+  padding: 5px;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+footer{
+  background-color: rgba(247, 228, 198, 0.5);
+  height:150px;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wraps{
+  overflow: hidden;
+  display: none;
+}
+
+/* header要素を記述 */
+.container {
+  max-width:1170px;
+  width: 100%;
+  padding:0;
+  margin:0 auto;
+}
+.header-left{
+  float: left;
+}
+
+.header-right li{
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.header-right a{
+  line-height: 55px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+/* ハンバーガーメニューの記述 */
+.wrap {
+  padding: 60px 0 0 0;
+  background-color: #f8e0f7;
+}
+
+.content {
+  text-align: center;
+  font-size: 22px;
+  color: #bf86ce;
+  height: 2000px;
+  padding: 60px;
+}
+.content2{
+  font-size: 22px;
+  color: #bf86ce;
+  padding-top: 100px;
+  padding-bottom:1000px;
+  text-align: center;
+}
+
+/*ハンバーガーボタン*/
+
+.el_humburger {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 26px;
+  height: auto;
+  padding-top: 1px;
+  box-sizing: border-box;
+  z-index: 10000;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  pointer-events: auto;
+  display: none;
+}
+
+.el_humburger > span {
+  display: block;
+  width: 100%;
+  margin: 0 auto 6px;
+  height: 3px;
+  background: white;
+  transition: all 0.2s ease-in-out;
+}
+.el_humburger > span:last-child {
+  margin-bottom: 0;
+}
+.js_humburgerOpen .el_humburger > span {
+  background: white;
+}
+
+.js_humburgerOpen .el_humburger > span.tops {
+  transform: translateY(9px) rotate(-45deg);
+}
+
+.js_humburgerOpen .el_humburger > span.middle {
+  opacity: 0;
+}
+
+.js_humburgerOpen .el_humburger > span.bottom {
+  transform: translateY(-9px) rotate(45deg);
+}
+
+.el_humburgerButton.el_humburgerButton__close {
+  top: 2%;
+  right: 2%;
+}
+
+.el_humburgerButton__close > span {
+  display: block;
+  width: 35px;
+  margin: 0 auto;
+  height: 4px;
+  background: #fff;
+}
+
+.el_humburgerButton__close > span.el_humburgerLineTop {
+  transform: translateY(5px) rotate(-45deg);
+}
+
+.el_humburgerButton__close > span.el_humburgerLineBottom {
+  transform: translateY(-6px) rotate(45deg);
+}
+
+/*ナビゲーション*/
+.uq_spNavi {
+  display: none;
+}
+.uq_spNavi.js_appear {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  z-index: 9999;
+}
+
+.uq_spNavi_screen {
+  position: absolute;
+  top: 0;
+  left: 50;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(105, 105, 105, 1.0);
+  z-index: 0;
+  margin-top: 0px;
+  padding-top: 0px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.navigation {
+  padding: 80px 0 0 0;
+  text-align: center;
+}
+
+.navigation_item {
+  font-ize: 18px;
+  margin-bottom: 20px;
+}
+
+.navigation_item > a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.js_fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* トップ部分のcss記述 */
+.top{
+  padding: 180px 0 100px 0;
+  background-image: url("../image/sushi2.jpg");
+  color:white;
+  background-size: cover;
+  text-align: center;
+}
+.top h1{
+  opacity:0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  color: white;
+}
+.top p{
+  opacity: 0.7;
+  color: white;
+}
+/* snsボタンのcss記述 */
+.btn{
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px:
+  text-align:center;
+}
+
+.facebook{
+  background-color: blue;
+  margin-right: 10px;
+}
+.twitter{
+  background-color: lightblue;
+}
+.instagram{
+  background-color: pink;
+  margin-right: 10px;
+}
+
+.btn-navi{
+  margin: 20px 0;
+}
+
+.btn-navi p{
+  margin: 10px 0;
+}
+/* font読み込みの記述 */
+.fa{
+  margin-right: 5px;
+}
+
+/* main navi内のcss記述 */
+
+
+.main-navi{
+  height: 200px;
+  padding-bottom: 80px;
+  background-color: rgba(247, 228, 198, 0.5);
+}
+.heading{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2{
+  font-weight: normal;
+  border-bottom: : 2px solid;
+}
+
+.main-content{
+  float: left;
+  width:33%;
+}
+.navi{
+  padding-left: 60px;
+  border-radius: 20px;
+}
+
+/* conceptのcss記述 */
+
+.concept{
+  width: 100%;
+  height:450px;
+  padding-bottom: 80px;
+  background-color: rgba(247, 228, 198, 0.5);
+}
+.concept-box{
+  max-width: 1170px;
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+.concept-image{
+  height: auto;
+  text-align: right;
+}
+
+.backcolor{
+background-color: white;
+}
+
+.consept-sentence{
+  padding-top: 30px;
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.second{
+  display: none;
+}
+
+
+.flex-list{
+  display: flex;
+}
+
+.flex-list img{
+  height: auto;
+}
+
+.consept-sentence > p{
+  text-align: left;
+}
+
+.flex-list li{
+  flex: auto;
+  width: 50%;
+  /* padding: 0; */
+}
+
+/* .topics-left{
+  float: left;
+  width: 25%;
+}
+.topics-icon{
+  position: relative;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.txt-contents{
+  width: 80%;
+  display: inline-block;
+  margin-left: 15px;
+  color: black;
+} */
+
+.frame-border{
+  border-bottom: 4px solid grey;
+}
+
+/* footerのcss */
+/* footer img{ */
+  /* margin-top: 100px; */
+  /* margin-left: 70px; */
+}
+/* footer p{
+  margin-right: 60px;
+  text-align: center;
+} */
+.flex-list-vertical{
+  flex-direction: column;
+}
+
+.flex-list-vertical p{
+  text-align: center;
+}
+
+@media(max-width:1100px) {
+  .header-right{
+    display: none;
+  }
+  .el_humburger{
+    display: block;
+  }
+  .flex-list{
+    flex-wrap: wrap;
+  }
+.flex-list li{
+  width: 100%;
+}
+
+.flex-list p{
+  text-align: center;
+}
+
+.consept-sentence{
+  display: none;
+}
+
+.second{
+  display: block;
+  font-size: 18px;
+}
+
+.top h1{
+  font-size: 33px;
+}
+
+.concept{
+  height: auto;
+}
+
+.backcolor{
+  background-color: rgba(247, 228, 198, 0.5);
+}
+
+
+.main-navi{
+  height: auto;
+}
+
+.main-navi p{
+  text-align: center;
+  padding: 40px;
+}
+}
+
+
+
+@media(max-width:800px){
+
+  .main-navi{
+    height: auto;
+  }
+  .main-content{
+    width: 100%;
+  }
+  .main-navi p{
+    text-align: center;
+    padding: 40px;
+  }
+
+
+}
